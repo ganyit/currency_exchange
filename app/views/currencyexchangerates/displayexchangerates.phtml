@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <?php 
+      $this->assets->outputJs(); 
+      $this->assets->outputCss();
+    ?>
+  <head>
+  <body>
+    <h1><?php echo $page_title; ?></h1>
+    <h3>1 USD == </h3>
+    <div class="exchange_rates container"></div>
+    <div class="footer_ctrl">
+      <a href="javascript:void(0)">Refresh</a>
+      <span class="cur_time"></span>
+    </div>
+  </body>
+</html>
