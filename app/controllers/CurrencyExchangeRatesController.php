@@ -56,7 +56,7 @@ class CurrencyExchangeRatesController extends Controller
       if ($mCurrencyDetails) {
         return $mCurrencyDetails;
       }else{
-        $url = "https://api.apilayer.com/fixer/latest?base=USD&symbols=EUR,GBP,INR,AED,AFN&apikey=5Q9x610GiLX9TGv4UWDhzzb1EX9sWPFS";
+        $url = API_PATH;
         $restService = new RestfulServices();
         $currency_details = $restService->makeApiRequest($url);
         $cache->set('currency_details', $currency_details, 120);

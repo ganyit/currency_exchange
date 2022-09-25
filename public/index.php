@@ -8,6 +8,7 @@ use Phalcon\Mvc\Url;
 
 define('BASE_PATH', dirname(__DIR__));
 define('APP_PATH', BASE_PATH . '/app');
+define('API_PATH', 'https://api.apilayer.com/fixer/latest?base=USD&symbols=EUR,GBP,INR,AED,AFN&apikey=5Q9x610GiLX9TGv4UWDhzzb1EX9sWPFS');
 
 $loader = new Loader();
 
